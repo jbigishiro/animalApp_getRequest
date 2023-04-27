@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(243, 235, 240);
+  }
+  
+  #header {
+    background-color:green;
+    font-size: 20px;
+    color: white;
+    height: 45px;
+    text-align: center;
+  }
+
+  .container {
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    top:20px;
+    border: outset 4px rgb(222, 209, 209);
+    border-radius: 5px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+  }
+
+  #form  {
+    top: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    font-size: 12px;
+    text-align: left;
+    word-break: break-all; 
+  }
+
+  #name {
+    width: 350px;
+    overflow: auto;
+  }
+
+  #image_url {
+    width: 350px;
+  }
+
+  #description {
+    width: 350px;
+    height: 40px;
+  }
+
+  .btn {
+    color:white;
+    background: green;
+    border: none;
+    font-size: 12px;
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+  }
+ 
