@@ -35,6 +35,16 @@ body {
     word-break: break-all; 
   }
 
+  #list {
+    top: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+    font-size: 12px;
+    text-align: left;
+    word-break: break-all; 
+  }
+
   #name {
     width: 350px;
     overflow: auto;
@@ -57,5 +67,6 @@ body {
     width: 90px;
     height: 25px;
     border-radius: 5px;
+    text-align: center;
   }
  

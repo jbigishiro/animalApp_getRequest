@@ -13,21 +13,29 @@ function renderOneAnimal(animal){
       </p>
       <p>${animal.description}</p>
       </div>
-      <div class="btn">
+      <div class="btn" textAlign="center>
         <button> Donate $10 </button>
         <button> Set free </button>
       </div>
     `
     //add animal card to DOM
 document.getElementById("list").appendChild(card)
-
     
+}
+// fetch requests
+//Get Fetch for all animal resources
+function getAllAnimals(){
+    fetch('http://localhost:3000/animalData')
+    .then(res=>res.json())
+    .then(animalData=>animalData.forEach(animal=>renderOneAnimal(animal)))
+
 }
 
 
 // initial render
 // get data and render our animals to the DOM
 function initialize(){
-    animalData.forEach(animal=>renderOneAnimal(animal))
+  getAllAnimals()
+  //  animalData.forEach(animal=>renderOneAnimal(animal))
 }
 initialize()
